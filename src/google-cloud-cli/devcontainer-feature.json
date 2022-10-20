@@ -1,10 +1,10 @@
 {
     "name": "Google Cloud CLI",
-    "id": "gcloud-cli",
+    "id": "google-cloud-cli",
     "version": "1.0.0",
-    "description": "Install gcloud CLI",
+    "description": "Install google-cloud-cli",
     "options": {
-        "favorite": {
+        "version": {
             "type": "string",
             "proposal": [
                 "latest"
