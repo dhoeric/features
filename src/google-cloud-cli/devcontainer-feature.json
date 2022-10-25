@@ -3,6 +3,7 @@
     "id": "google-cloud-cli",
     "version": "1.0.0",
     "description": "Install google-cloud-cli",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/google-cloud-cli",
     "options": {
         "version": {
             "type": "string",
