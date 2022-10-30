@@ -1,0 +1,21 @@
+{
+    "name": "Open Policy Agent",
+    "id": "opa",
+    "version": "1.0.0",
+    "description": "Install Open Policy Agent (opa)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/opa",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.45.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter an opa version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

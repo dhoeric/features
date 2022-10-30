@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - add-gcloud-cli
   workflow_dispatch:
 
 jobs:
@@ -13,7 +12,8 @@ jobs:
     strategy:
       matrix:
         features: [
-           "google-cloud-cli"
+           "google-cloud-cli",
+           "opa"
         ]
         baseImage:
           [

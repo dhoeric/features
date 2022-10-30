@@ -19,6 +19,7 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "gcloud version" gcloud --version
+check "opa version" opa version
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
