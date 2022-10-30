@@ -1,5 +1,5 @@
 
-# Conftest
+# Conftest (conftest)
 
 Install [conftest](https://www.conftest.dev/)
 
@@ -23,4 +23,4 @@ Install [conftest](https://www.conftest.dev/)
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/opa/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/conftest/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
