@@ -1,0 +1,21 @@
+{
+    "name": "Conftest",
+    "id": "conftest",
+    "version": "1.0.0",
+    "description": "Install [conftest](https://www.conftest.dev/)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/conftest",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.35.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter a conftest version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

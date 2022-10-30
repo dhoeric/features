@@ -1,13 +1,13 @@
 
-# Open Policy Agent (opa)
+# Conftest
 
-Install [Open Policy Agent (opa)](https://www.openpolicyagent.org/docs/latest/#running-opa)
+Install [conftest](https://www.conftest.dev/)
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/opa:1": {
+    "ghcr.io/dhoeric/features/conftest:1": {
         "version": "latest"
     }
 }
@@ -17,7 +17,7 @@ Install [Open Policy Agent (opa)](https://www.openpolicyagent.org/docs/latest/#r
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter an opa version | string | latest |
+| version | Select or enter a conftest version | string | latest |
 
 
 

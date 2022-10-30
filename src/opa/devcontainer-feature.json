@@ -2,7 +2,7 @@
     "name": "Open Policy Agent",
     "id": "opa",
     "version": "1.0.0",
-    "description": "Install Open Policy Agent (opa)",
+    "description": "Install [Open Policy Agent (opa)](https://www.openpolicyagent.org/docs/latest/#running-opa)",
     "documentationURL": "https://github.com/dhoeric/features/tree/main/src/opa",
     "options": {
         "version": {

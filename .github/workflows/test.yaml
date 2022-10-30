@@ -13,7 +13,8 @@ jobs:
       matrix:
         features: [
            "google-cloud-cli",
-           "opa"
+           "opa",
+           "conftest"
         ]
         baseImage:
           [
