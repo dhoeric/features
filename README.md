@@ -4,6 +4,7 @@
 
 This repository contains following features:
 - [google-cloud-cli](./src/google-cloud-cli/README.md): Install Google Cloud CLI tools
+- [opa](./src/opa/README.md): Install Open Policy Agent (opa)
 
 ## Usage
 
