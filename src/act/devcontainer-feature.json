@@ -1,0 +1,21 @@
+{
+    "name": "act",
+    "id": "act",
+    "version": "1.0.0",
+    "description": "Install [act](https://github.com/nektos/act) - run github action locally",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/act",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.2.33"
+            ],
+            "default": "latest",
+            "description": "Select or enter a act version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

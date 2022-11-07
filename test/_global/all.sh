@@ -21,6 +21,10 @@ source dev-container-features-test-lib
 check "gcloud version" gcloud --version
 check "opa version" opa version
 check "conftest version" conftest --version
+check "tfsec version" tfsec --version
+check "trivy version" trivy --version
+check "act version" act --version
+check "k9s version" k9s version
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
