@@ -47,7 +47,9 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: "Publish Features"
+      - uses: actions/checkout@v2
+
+      - name: "Update Readme"
         uses: devcontainers/action@v1
         with:
           base-path-to-features: "./src"
