@@ -1,7 +1,7 @@
 
 # act (act)
 
-Install [act](https://github.com/nektos/act)
+Install [act](https://github.com/nektos/act) - run github action locally
 
 ## Example Usage
 

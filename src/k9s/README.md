@@ -1,13 +1,13 @@
 
-# tfsec (tfsec)
+# k9s-cli (k9s)
 
-Install [tfsec](https://aquasecurity.github.io/tfsec/)
+Install [k9s](https://k9scli.io/)
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/tfsec:1": {
+    "ghcr.io/dhoeric/features/k9s:1": {
         "version": "latest"
     }
 }
@@ -17,10 +17,10 @@ Install [tfsec](https://aquasecurity.github.io/tfsec/)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter tfsec version | string | latest |
+| version | Select or enter k9s version | string | latest |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/tfsec/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/k9s/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
