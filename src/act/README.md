@@ -19,7 +19,9 @@ Install [act](https://github.com/nektos/act) - run github action locally
 |-----|-----|-----|-----|
 | version | Select or enter a act version | string | latest |
 
+## Reference
 
+act: https://github.com/nektos/act
 
 ---
 
