@@ -4,7 +4,11 @@
         "features": {
             "google-cloud-cli": {},
             "opa": {},
-            "conftest": {}
+            "conftest": {},
+            "tfsec": {},
+            "trivy": {},
+            "act": {},
+            "k9s": {},
         }
     }
 }

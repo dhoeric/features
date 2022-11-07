@@ -6,6 +6,10 @@ This repository contains following features:
 - [google-cloud-cli](./src/google-cloud-cli/README.md): Install Google Cloud CLI tools
 - [opa](./src/opa/README.md): Install Open Policy Agent (opa)
 - [conftest](./src/conftest/README.md): Install conftest
+- [tfsec](./src/tfsec/README.md): Install tfsec
+- [trivy](./src/trivy/README.md): Install trivy
+- [act](./src/act/README.md): Install act
+- [k9s](./src/k9s/README.md): Install k9s
 
 ## Usage
 

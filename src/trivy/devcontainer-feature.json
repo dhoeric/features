@@ -1,0 +1,21 @@
+{
+    "name": "trivy",
+    "id": "trivy",
+    "version": "1.0.0",
+    "description": "Install [trivy](https://trivy.dev/)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/trivy",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.34.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter trivy version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
