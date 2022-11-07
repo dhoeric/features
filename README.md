@@ -10,6 +10,7 @@ This repository contains following features:
 - [trivy](./src/trivy/README.md): Install trivy
 - [act](./src/act/README.md): Install act
 - [k9s](./src/k9s/README.md): Install k9s
+- [flyctl](./src/flyctl/README.md): Install flyctl
 
 ## Usage
 
