@@ -19,7 +19,9 @@ Install [conftest](https://www.conftest.dev/)
 |-----|-----|-----|-----|
 | version | Select or enter a conftest version | string | latest |
 
+## Reference
 
+conftest: https://github.com/open-policy-agent/conftest
 
 ---
 

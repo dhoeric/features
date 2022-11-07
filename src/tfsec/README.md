@@ -19,7 +19,9 @@ Install [tfsec](https://aquasecurity.github.io/tfsec/)
 |-----|-----|-----|-----|
 | version | Select or enter tfsec version | string | latest |
 
+## Reference
 
+tfsec: https://github.com/aquasecurity/tfsec
 
 ---
 

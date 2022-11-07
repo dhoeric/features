@@ -19,7 +19,9 @@ Install [Open Policy Agent (opa)](https://www.openpolicyagent.org/docs/latest/#r
 |-----|-----|-----|-----|
 | version | Select or enter an opa version | string | latest |
 
+## Reference
 
+opa: https://github.com/open-policy-agent/opa
 
 ---
 

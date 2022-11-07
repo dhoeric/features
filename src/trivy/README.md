@@ -19,7 +19,9 @@ Install [trivy](https://trivy.dev/)
 |-----|-----|-----|-----|
 | version | Select or enter trivy version | string | latest |
 
+## Reference
 
+trivy: https://github.com/aquasecurity/trivy
 
 ---
 
