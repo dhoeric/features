@@ -18,6 +18,8 @@ jobs:
            "tfsec",
            "trivy",
            "act",
+           "k9s",
+           "flyctl",
         ]
         baseImage:
           [
