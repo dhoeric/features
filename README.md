@@ -11,6 +11,9 @@ This repository contains following features:
 - [act](./src/act/README.md): Install act
 - [k9s](./src/k9s/README.md): Install k9s
 - [flyctl](./src/flyctl/README.md): Install flyctl
+- [aztfy](./src/aztfy/README.md): Install aztfy
+- [terraformer](./src/terraformer/README.md): Install terraformer
+- [terraform-docs](./src/terraform-docs/README.md): Install terraform-docs
 
 ## Usage
 
