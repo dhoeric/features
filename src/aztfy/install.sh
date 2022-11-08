@@ -5,7 +5,7 @@ set -e
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
-TFSEC_VERSION=${VERSION:-"latest"}
+AZTFY_VERSION=${VERSION:-"latest"}
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -65,7 +65,7 @@ find_version_from_git_tags() {
 }
 
 # Install dependencies
-check_packages curl git
+check_packages curl git unzip
 
 architecture="$(uname -m)"
 case $architecture in
@@ -74,15 +74,20 @@ case $architecture in
     *) echo "(!) Architecture $architecture unsupported"; exit 1 ;;
 esac
 
-# Install tfsec
-echo "(*) Installing tfsec..."
-find_version_from_git_tags TFSEC_VERSION https://github.com/aquasecurity/tfsec
+# Use a temporary locaiton for aztfy archive
+export TMP_DIR="/tmp/tmp-aztfy"
+mkdir -p ${TMP_DIR}
+chmod 700 ${TMP_DIR}
 
-if [ "${TFSEC_VERSION::1}" != 'v' ]; then
-    TFSEC_VERSION="v${TFSEC_VERSION}"
-fi
-curl -sSL -o /usr/local/bin/tfsec "https://github.com/aquasecurity/tfsec/releases/download/${TFSEC_VERSION}/tfsec-linux-${architecture}"
-chmod 0755 /usr/local/bin/tfsec
+# Install aztfy
+echo "(*) Installing aztfy..."
+find_version_from_git_tags AZTFY_VERSION https://github.com/Azure/aztfy
+
+AZTFY_VERSION="${AZTFY_VERSION#"v"}"
+curl -sSL -o ${TMP_DIR}/aztfy.zip "https://github.com/Azure/aztfy/releases/download/v${AZTFY_VERSION}/aztfy_v${AZTFY_VERSION}_linux_${architecture}.zip"
+unzip ${TMP_DIR}/aztfy.zip
+mv -f aztfy /usr/local/bin/
+chmod 0755 /usr/local/bin/aztfy
 
 # Clean up
 rm -rf /var/lib/apt/lists/*

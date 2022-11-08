@@ -26,6 +26,9 @@ check "trivy version" trivy --version
 check "act version" act --version
 check "k9s version" k9s version
 check "flyctl version" flyctl version
+check "aztfy version" aztfy --version
+check "terraformer version" terraformer --version
+check "terraform-docs version" terraform-docs --version
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

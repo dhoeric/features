@@ -5,7 +5,7 @@ set -e
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
-TFSEC_VERSION=${VERSION:-"latest"}
+TF_DOCS_VERSION=${VERSION:-"latest"}
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -65,7 +65,7 @@ find_version_from_git_tags() {
 }
 
 # Install dependencies
-check_packages curl git
+check_packages curl git tar
 
 architecture="$(uname -m)"
 case $architecture in
@@ -74,15 +74,20 @@ case $architecture in
     *) echo "(!) Architecture $architecture unsupported"; exit 1 ;;
 esac
 
-# Install tfsec
-echo "(*) Installing tfsec..."
-find_version_from_git_tags TFSEC_VERSION https://github.com/aquasecurity/tfsec
+# Use a temporary locaiton for conftest archive
+export TMP_DIR="/tmp/tmp-conftest"
+mkdir -p ${TMP_DIR}
+chmod 700 ${TMP_DIR}
 
-if [ "${TFSEC_VERSION::1}" != 'v' ]; then
-    TFSEC_VERSION="v${TFSEC_VERSION}"
-fi
-curl -sSL -o /usr/local/bin/tfsec "https://github.com/aquasecurity/tfsec/releases/download/${TFSEC_VERSION}/tfsec-linux-${architecture}"
-chmod 0755 /usr/local/bin/tfsec
+# Install terraform-docs
+echo "(*) Installing terraform-docs..."
+find_version_from_git_tags TF_DOCS_VERSION https://github.com/terraform-docs/terraform-docs
+
+TF_DOCS_VERSION="${TF_DOCS_VERSION#"v"}"
+curl -sSL -o ${TMP_DIR}/terraform-docs.tar.gz "https://github.com/terraform-docs/terraform-docs/releases/download/v${TF_DOCS_VERSION}/terraform-docs-v${TF_DOCS_VERSION}-linux-${architecture}.tar.gz"
+tar -xzf "${TMP_DIR}/terraform-docs.tar.gz" -C "${TMP_DIR}" terraform-docs
+mv ${TMP_DIR}/terraform-docs /usr/local/bin/terraform-docs
+chmod 0755 /usr/local/bin/terraform-docs
 
 # Clean up
 rm -rf /var/lib/apt/lists/*

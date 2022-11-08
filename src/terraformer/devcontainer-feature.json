@@ -1,0 +1,32 @@
+{
+    "name": "terraformer",
+    "id": "terraformer",
+    "version": "1.0.0",
+    "description": "Install [terraformer](https://github.com/GoogleCloudPlatform/terraformer)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/terraformer",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.8.22"
+            ],
+            "default": "latest",
+            "description": "Select or enter a terraformer version"
+        },
+        "provider": {
+            "type": "string",
+            "proposal": [
+                "all",
+                "aws",
+                "google",
+                "azure"
+            ],
+            "default": "all",
+            "description": "Select the provider to be downloaded (default: all)"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
