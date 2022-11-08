@@ -18,7 +18,6 @@ Install [terraformer](https://github.com/GoogleCloudPlatform/terraformer)
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select or enter a terraformer version | string | latest |
-| provider | Select the provider to be downloaded (default: all) | string | all |
 
 ## Reference
 
