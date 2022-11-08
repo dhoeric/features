@@ -1,0 +1,21 @@
+{
+    "name": "terraform-docs",
+    "id": "terraform-docs",
+    "version": "1.0.0",
+    "description": "Install [terraform-docs](https://terraform-docs.io/)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/terraform-docs",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.16.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter a terraform-docs version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

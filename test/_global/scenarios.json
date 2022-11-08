@@ -10,6 +10,9 @@
             "act": {},
             "k9s": {},
             "flyctl": {},
+            "aztfy": {},
+            "terraformer": {},
+            "terraform-docs": {},
         }
     }
 }

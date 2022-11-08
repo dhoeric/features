@@ -1,18 +1,18 @@
 {
-    "name": "tfsec",
-    "id": "tfsec",
+    "name": "aztfy",
+    "id": "aztfy",
     "version": "1.0.0",
-    "description": "Install [tfsec](https://aquasecurity.github.io/tfsec/)",
-    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/tfsec",
+    "description": "Install [aztfy](https://github.com/Azure/aztfy)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/aztfy",
     "options": {
         "version": {
             "type": "string",
             "proposal": [
                 "latest",
-                "1.28.1"
+                "0.8.0"
             ],
             "default": "latest",
-            "description": "Select or enter tfsec version"
+            "description": "Select or enter aztfy version"
         }
     },
     "installsAfter": [
