@@ -1,13 +1,13 @@
 
-# Conftest (conftest)
+# terraform-docs (terraform-docs)
 
-Install [conftest](https://www.conftest.dev/)
+Install [terraform-docs](https://terraform-docs.io/)
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/conftest:1": {
+    "ghcr.io/dhoeric/features/terraform-docs:1": {
         "version": "latest"
     }
 }
@@ -17,12 +17,12 @@ Install [conftest](https://www.conftest.dev/)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a conftest version | string | latest |
+| version | Select or enter a terraform-docs version | string | latest |
 
 ## Reference
 
-conftest: https://github.com/open-policy-agent/conftest
+terraform-docs: https://github.com/terraform-docs/terraform-docs
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/conftest/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/terraform-docs/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

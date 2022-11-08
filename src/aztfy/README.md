@@ -1,13 +1,13 @@
 
-# Conftest (conftest)
+# aztfy (aztfy)
 
-Install [conftest](https://www.conftest.dev/)
+Install [aztfy](https://github.com/Azure/aztfy)
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/conftest:1": {
+    "ghcr.io/dhoeric/features/aztfy:1": {
         "version": "latest"
     }
 }
@@ -17,12 +17,12 @@ Install [conftest](https://www.conftest.dev/)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a conftest version | string | latest |
+| version | Select or enter aztfy version | string | latest |
 
 ## Reference
 
-conftest: https://github.com/open-policy-agent/conftest
+aztfy: https://github.com/Azure/aztfy
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/conftest/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/aztfy/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

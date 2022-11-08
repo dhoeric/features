@@ -1,13 +1,13 @@
 
-# Conftest (conftest)
+# terraformer (terraformer)
 
-Install [conftest](https://www.conftest.dev/)
+Install [terraformer](https://github.com/GoogleCloudPlatform/terraformer)
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/conftest:1": {
+    "ghcr.io/dhoeric/features/terraformer:1": {
         "version": "latest"
     }
 }
@@ -17,12 +17,14 @@ Install [conftest](https://www.conftest.dev/)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a conftest version | string | latest |
+| version | Select or enter a terraformer version | string | latest |
+| provider | Select the provider to be downloaded (default: all) | string | all |
 
 ## Reference
 
-conftest: https://github.com/open-policy-agent/conftest
+terraformer: https://github.com/GoogleCloudPlatform/terraformer
+
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/conftest/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dhoeric/features/blob/main/src/terraformer/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
