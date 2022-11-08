@@ -6,7 +6,6 @@ set -e
 rm -rf /var/lib/apt/lists/*
 
 TERRAFORMER_VERSION=${VERSION:-"latest"}
-TERRAFORMER_PROVIDER=${PROVIDER:-"all"}
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -80,7 +79,7 @@ echo "(*) Installing terraformer..."
 find_version_from_git_tags TERRAFORMER_VERSION https://github.com/GoogleCloudPlatform/terraformer "tags/"
 
 TERRAFORMER_VERSION="${TERRAFORMER_VERSION#"v"}"
-curl -sSL -o /usr/local/bin/terraformer "https://github.com/GoogleCloudPlatform/terraformer/releases/download/${TERRAFORMER_VERSION}/terraformer-${TERRAFORMER_PROVIDER}-linux-${architecture}"
+curl -sSL --fail -o /usr/local/bin/terraformer "https://github.com/GoogleCloudPlatform/terraformer/releases/download/${TERRAFORMER_VERSION}/terraformer-all-linux-${architecture}"
 chmod 0755 /usr/local/bin/terraformer
 
 # Clean up

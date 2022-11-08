@@ -13,17 +13,6 @@
             ],
             "default": "latest",
             "description": "Select or enter a terraformer version"
-        },
-        "provider": {
-            "type": "string",
-            "proposal": [
-                "all",
-                "aws",
-                "google",
-                "azure"
-            ],
-            "default": "all",
-            "description": "Select the provider to be downloaded (default: all)"
         }
     },
     "installsAfter": [
