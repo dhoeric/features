@@ -1,0 +1,21 @@
+{
+    "name": "mizu",
+    "id": "mizu",
+    "version": "1.0.0",
+    "description": "Install [mizu](https://github.com/up9inc/mizu)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/mizu",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "36.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter mizu version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

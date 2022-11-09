@@ -13,6 +13,9 @@
             "aztfy": {},
             "terraformer": {},
             "terraform-docs": {},
+            "k6": {},
+            "hadolint": {},
+            "mizu": {},
         }
     }
 }

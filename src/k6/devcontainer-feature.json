@@ -1,0 +1,21 @@
+{
+    "name": "k6",
+    "id": "k6",
+    "version": "1.0.0",
+    "description": "Install [k6](https://k6.io/)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/k6",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.41.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter a k6 version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

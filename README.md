@@ -14,6 +14,9 @@ This repository contains following features:
 - [aztfy](./src/aztfy/README.md): Install aztfy
 - [terraformer](./src/terraformer/README.md): Install terraformer
 - [terraform-docs](./src/terraform-docs/README.md): Install terraform-docs
+- [k6](./src/k6/README.md): Install k6
+- [hadolint](./src/hadolint/README.md): Install hadolint
+- [mizu](./src/mizu/README.md): Install mizu
 
 ## Usage
 
