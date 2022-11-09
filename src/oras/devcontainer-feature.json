@@ -1,0 +1,21 @@
+{
+    "name": "oras-cli",
+    "id": "oras",
+    "version": "1.0.0",
+    "description": "Install [oras](https://oras.land/cli/) - OCI Registry As Storage",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/oras",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "0.16.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter oras version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

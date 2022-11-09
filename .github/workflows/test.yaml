@@ -27,6 +27,7 @@ jobs:
            "k6",
            "hadolint",
            "mizu",
+           "oras",
            "stern",
         ]
         baseImage:

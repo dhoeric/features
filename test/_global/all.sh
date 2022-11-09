@@ -32,6 +32,7 @@ check "terraform-docs version" terraform-docs --version
 check "k6 version" k6 version
 check "hadolint version" hadolint --version
 check "mizu version" mizu version
+check "oras version" oras version
 check "stern version" stern --version
 
 # Report result
