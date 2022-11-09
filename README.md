@@ -17,6 +17,7 @@ This repository contains following features:
 - [k6](./src/k6/README.md): Install k6
 - [hadolint](./src/hadolint/README.md): Install hadolint
 - [mizu](./src/mizu/README.md): Install mizu
+- [oras](./src/oras/README.md): Install oras
 
 ## Usage
 
