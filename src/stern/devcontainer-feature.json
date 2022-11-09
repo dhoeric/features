@@ -1,0 +1,21 @@
+{
+    "name": "stern",
+    "id": "stern",
+    "version": "1.0.0",
+    "description": "Install [stern](https://github.com/stern/stern) - Multi pod and container log tailing for Kubernetes",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/stern",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "1.22.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter stern version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
