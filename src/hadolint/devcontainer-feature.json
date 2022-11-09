@@ -1,0 +1,21 @@
+{
+    "name": "hadolint",
+    "id": "hadolint",
+    "version": "1.0.0",
+    "description": "Install [hadolint](https://github.com/hadolint/hadolint)",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/hadolint",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest",
+                "2.10.0"
+            ],
+            "default": "latest",
+            "description": "Select or enter a hadolint version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

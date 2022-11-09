@@ -21,6 +21,12 @@ jobs:
            "act",
            "k9s",
            "flyctl",
+           "aztfy",
+           "terraformer",
+           "terraform-docs",
+           "k6",
+           "hadolint",
+           "mizu",
         ]
         baseImage:
           [
