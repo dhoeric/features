@@ -28,6 +28,7 @@ jobs:
            "hadolint",
            "mizu",
            "oras",
+           "stern",
         ]
         baseImage:
           [

@@ -18,6 +18,7 @@ This repository contains following features:
 - [hadolint](./src/hadolint/README.md): Install hadolint
 - [mizu](./src/mizu/README.md): Install mizu
 - [oras](./src/oras/README.md): Install oras
+- [stern](./src/stern/README.md): Install stern
 
 ## Usage
 
