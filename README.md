@@ -19,6 +19,7 @@ This repository contains following features:
 - [mizu](./src/mizu/README.md): Install mizu
 - [oras](./src/oras/README.md): Install oras
 - [stern](./src/stern/README.md): Install stern
+- [actionlint](./src/actionlint/README.md): Install actionlint
 
 ## Usage
 

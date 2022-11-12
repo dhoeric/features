@@ -1,0 +1,20 @@
+{
+    "name": "actionlint",
+    "id": "actionlint",
+    "version": "1.0.0",
+    "description": "Install [actionlint](https://rhysd.github.io/actionlint/) - Static checker for GitHub Actions workflow files",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/actionlint",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter actionlint version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
