@@ -28,6 +28,57 @@ check_packages() {
     fi
 }
 
+# from https://stackoverflow.com/questions/4023830/how-to-compare-two-strings-in-dot-separated-version-format-in-bash
+function vercomp() {
+  if [[ "$1" == "$2" ]]; then
+    return 0
+  fi
+  local IFS=.
+  # shellcheck disable=SC2206
+  local i ver1=($1) ver2=($2)
+  # fill empty fields in ver1 with zeros
+  for ((i = ${#ver1[@]}; i < ${#ver2[@]}; i++)); do
+    ver1[i]=0
+  done
+  for ((i = 0; i < ${#ver1[@]}; i++)); do
+    if [[ -z ${ver2[i]} ]]; then
+      # fill empty fields in ver2 with zeros
+      ver2[i]=0
+    fi
+    if ((10#${ver1[i]} > 10#${ver2[i]})); then
+      return 1
+    fi
+    if ((10#${ver1[i]} < 10#${ver2[i]})); then
+      return 2
+    fi
+  done
+  return 0
+}
+
+get_architecture() {
+    local version="$1"
+    local architecture_
+    architecture="$(uname -m)"
+    case $architecture in
+        x86_64) architecture_="amd64";;
+        aarch64 | armv8* | arm64) architecture_="arm64";;
+        *) echo "(!) Architecture $architecture unsupported"; exit 1 ;;
+    esac
+
+    # x86_64 before 0.27.0
+    vercomp "$version" "0.27.0"
+    case $? in
+    0) op='=' ;;
+    1) op='>' ;;
+    2) op='<' ;;
+    esac
+    if [[ "$op" == '<' && "$architecture" == 'x86_64' ]]; then
+        architecture_="x86_64"
+    fi
+
+    echo "${architecture_}"
+}
+
 export DEBIAN_FRONTEND=noninteractive
 
 # Figure out correct version of a three part version number is not passed
@@ -67,12 +118,12 @@ find_version_from_git_tags() {
 # Install dependencies
 check_packages curl git tar
 
-architecture="$(uname -m)"
-case $architecture in
-    x86_64) architecture="x86_64";;
-    aarch64 | armv8* | arm64) architecture="arm64";;
-    *) echo "(!) Architecture $architecture unsupported"; exit 1 ;;
-esac
+# architecture="$(uname -m)"
+# case $architecture in
+#     x86_64) architecture="x86_64";;
+#     aarch64 | armv8* | arm64) architecture="arm64";;
+#     *) echo "(!) Architecture $architecture unsupported"; exit 1 ;;
+# esac
 
 # Use a temporary locaiton for k9s archive
 export TMP_DIR="/tmp/tmp-k9s"
@@ -82,8 +133,10 @@ chmod 700 ${TMP_DIR}
 # Install k9s
 echo "(*) Installing k9s..."
 find_version_from_git_tags K9S_VERSION https://github.com/derailed/k9s
-
 K9S_VERSION="${K9S_VERSION#"v"}"
+
+architecture=$(get_architecture "$K9S_VERSION")
+
 curl -sSL -o ${TMP_DIR}/k9s.tar.gz "https://github.com/derailed/k9s/releases/download/v${K9S_VERSION}/k9s_Linux_${architecture}.tar.gz"
 tar -xzf "${TMP_DIR}/k9s.tar.gz" -C "${TMP_DIR}" k9s
 mv ${TMP_DIR}/k9s /usr/local/bin/k9s
