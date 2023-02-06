@@ -118,13 +118,6 @@ find_version_from_git_tags() {
 # Install dependencies
 check_packages curl git tar
 
-# architecture="$(uname -m)"
-# case $architecture in
-#     x86_64) architecture="x86_64";;
-#     aarch64 | armv8* | arm64) architecture="arm64";;
-#     *) echo "(!) Architecture $architecture unsupported"; exit 1 ;;
-# esac
-
 # Use a temporary locaiton for k9s archive
 export TMP_DIR="/tmp/tmp-k9s"
 mkdir -p ${TMP_DIR}
