@@ -1,7 +1,7 @@
 {
     "name": "k9s-cli",
     "id": "k9s",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Install [k9s](https://k9scli.io/)",
     "documentationURL": "https://github.com/dhoeric/features/tree/main/src/k9s",
     "options": {
