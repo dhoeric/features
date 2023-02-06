@@ -19,7 +19,7 @@ Install [k9s](https://k9scli.io/)
 
 ## Changelog
 
-- Using amd64 when k9s >=0.27.0
+- Using amd64 when k9s >=0.27.0 (#14)
 
 ## Reference
 
