@@ -7,9 +7,7 @@ Install [mizu](https://github.com/up9inc/mizu)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/mizu:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/mizu:1": {}
 }
 ```
 

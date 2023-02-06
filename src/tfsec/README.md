@@ -7,9 +7,7 @@ Install [tfsec](https://aquasecurity.github.io/tfsec/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/tfsec:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/tfsec:1": {}
 }
 ```
 
