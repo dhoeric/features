@@ -12,6 +12,11 @@
             ],
             "default": "latest",
             "description": "Select or enter a gcloud CLI version"
+        },
+        "installGkeGcloudAuthPlugin": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install 'gke-gcloud-auth-plugin' plugin?"
         }
     },
     "installsAfter": [
