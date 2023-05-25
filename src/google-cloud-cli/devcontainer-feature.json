@@ -1,7 +1,7 @@
 {
     "name": "Google Cloud CLI",
     "id": "google-cloud-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Install google-cloud-cli",
     "documentationURL": "https://github.com/dhoeric/features/tree/main/src/google-cloud-cli",
     "options": {
@@ -12,7 +12,7 @@
         },
         "installGkeGcloudAuthPlugin": {
             "type": "boolean",
-            "default": true,
+            "default": false,
             "description": "Install 'gke-gcloud-auth-plugin' plugin?"
         }
     },
