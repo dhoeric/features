@@ -6,7 +6,7 @@ set -e
 rm -rf /var/lib/apt/lists/*
 
 GCLOUD_VERSION=${VERSION:-"latest"}
-INSTALL_GKEGCLOUDAUTH_PLUGIN="${INSTALL_GKEGCLOUDAUTH_PLUGIN:-"false"}"
+INSTALL_GKEGCLOUDAUTH_PLUGIN="${INSTALLGKEGCLOUDAUTHPLUGIN:-"false"}"
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
