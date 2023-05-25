@@ -16,6 +16,7 @@ Install google-cloud-cli
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select or enter a gcloud CLI version | string | latest |
+| installGkeGcloudAuthPlugin | Install 'gke-gcloud-auth-plugin' plugin? | boolean | true |
 
 
 
