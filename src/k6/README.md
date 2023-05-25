@@ -7,9 +7,7 @@ Install [k6](https://k6.io/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/k6:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/k6:1": {}
 }
 ```
 

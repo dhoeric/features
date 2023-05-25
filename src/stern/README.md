@@ -7,9 +7,7 @@ Install [stern](https://github.com/stern/stern) - Multi pod and container log ta
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/stern:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/stern:1": {}
 }
 ```
 

@@ -7,9 +7,7 @@ Install [conftest](https://www.conftest.dev/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/conftest:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/conftest:1": {}
 }
 ```
 

@@ -7,9 +7,7 @@ Install [aztfy](https://github.com/Azure/aztfy)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/aztfy:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/aztfy:1": {}
 }
 ```
 

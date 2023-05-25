@@ -7,9 +7,7 @@ Install [oras](https://oras.land/cli/) - OCI Registry As Storage
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/oras:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/oras:1": {}
 }
 ```
 

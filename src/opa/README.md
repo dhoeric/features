@@ -7,9 +7,7 @@ Install [Open Policy Agent (opa)](https://www.openpolicyagent.org/docs/latest/#r
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/opa:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/opa:1": {}
 }
 ```
 

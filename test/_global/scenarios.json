@@ -17,7 +17,7 @@
             "hadolint": {},
             "mizu": {},
             "oras": {},
-            "stern": {},
+            "stern": {}
         }
     }
 }

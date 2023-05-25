@@ -7,9 +7,7 @@ Install [k9s](https://k9scli.io/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/k9s:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/k9s:1": {}
 }
 ```
 
@@ -18,6 +16,11 @@ Install [k9s](https://k9scli.io/)
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select or enter k9s version | string | latest |
+
+## Changelog
+
+### 1.0.1
+- Using amd64 when k9s >=0.27.0 (#14)
 
 ## Reference
 
