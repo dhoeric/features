@@ -6,6 +6,7 @@ set -e
 rm -rf /var/lib/apt/lists/*
 
 GCLOUD_VERSION=${VERSION:-"latest"}
+INSTALL_GKEGCLOUDAUTH_PLUGIN="${INSTALL_GKEGCLOUDAUTH_PLUGIN:-"false"}"
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -86,6 +87,12 @@ install_using_apt() {
     if ! (apt-get install -yq google-cloud-cli${GCLOUD_VERSION}); then
         rm -f /etc/apt/sources.list.d/google-cloud-sdk.list
         return 1
+    fi
+
+    # Install gke-gcloud-auth-plugin if needed
+    if [ "${INSTALL_GKEGCLOUDAUTH_PLUGIN}" = "true" ]; then
+        echo "(*) Installing 'gke-gcloud-auth-plugin' plugin..."
+        check_packages google-cloud-sdk-gke-gcloud-auth-plugin
     fi
 }
 
