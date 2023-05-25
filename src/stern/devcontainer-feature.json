@@ -7,10 +7,6 @@
     "options": {
         "version": {
             "type": "string",
-            "proposal": [
-                "latest",
-                "1.22.0"
-            ],
             "default": "latest",
             "description": "Select or enter stern version"
         }
