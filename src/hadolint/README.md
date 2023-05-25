@@ -7,9 +7,7 @@ Install [hadolint](https://github.com/hadolint/hadolint)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/hadolint:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/hadolint:1": {}
 }
 ```
 

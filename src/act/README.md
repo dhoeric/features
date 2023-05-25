@@ -7,9 +7,7 @@ Install [act](https://github.com/nektos/act) - run github action locally
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/act:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/act:1": {}
 }
 ```
 

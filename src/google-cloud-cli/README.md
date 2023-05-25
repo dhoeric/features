@@ -7,9 +7,7 @@ Install google-cloud-cli
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/google-cloud-cli:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/google-cloud-cli:1": {}
 }
 ```
 
@@ -18,6 +16,7 @@ Install google-cloud-cli
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select or enter a gcloud CLI version | string | latest |
+| installGkeGcloudAuthPlugin | Install 'gke-gcloud-auth-plugin' plugin? | boolean | true |
 
 
 

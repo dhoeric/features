@@ -7,9 +7,7 @@ Install [terraform-docs](https://terraform-docs.io/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/terraform-docs:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/terraform-docs:1": {}
 }
 ```
 
