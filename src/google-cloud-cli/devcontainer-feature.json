@@ -7,9 +7,6 @@
     "options": {
         "version": {
             "type": "string",
-            "proposal": [
-                "latest"
-            ],
             "default": "latest",
             "description": "Select or enter a gcloud CLI version"
         },

@@ -7,10 +7,6 @@
     "options": {
         "version": {
             "type": "string",
-            "proposal": [
-                "latest",
-                "1.28.1"
-            ],
             "default": "latest",
             "description": "Select or enter tfsec version"
         }

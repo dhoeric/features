@@ -17,6 +17,11 @@ Install [k9s](https://k9scli.io/)
 |-----|-----|-----|-----|
 | version | Select or enter k9s version | string | latest |
 
+## Changelog
+
+### 1.0.1
+- Using amd64 when k9s >=0.27.0 (#14)
+
 ## Reference
 
 k9s-cli: https://github.com/derailed/k9s

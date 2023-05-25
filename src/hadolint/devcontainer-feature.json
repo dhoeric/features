@@ -7,10 +7,6 @@
     "options": {
         "version": {
             "type": "string",
-            "proposal": [
-                "latest",
-                "2.10.0"
-            ],
             "default": "latest",
             "description": "Select or enter a hadolint version"
         }

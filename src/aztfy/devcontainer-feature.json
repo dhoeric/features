@@ -7,10 +7,6 @@
     "options": {
         "version": {
             "type": "string",
-            "proposal": [
-                "latest",
-                "0.8.0"
-            ],
             "default": "latest",
             "description": "Select or enter aztfy version"
         }
