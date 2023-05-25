@@ -7,10 +7,6 @@
     "options": {
         "version": {
             "type": "string",
-            "proposal": [
-                "latest",
-                "0.16.0"
-            ],
             "default": "latest",
             "description": "Select or enter a terraform-docs version"
         }
