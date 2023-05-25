@@ -7,9 +7,7 @@ Install [trivy](https://trivy.dev/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/trivy:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/trivy:1": {}
 }
 ```
 

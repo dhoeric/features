@@ -7,9 +7,7 @@ Install [k9s](https://k9scli.io/)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/k9s:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/k9s:1": {}
 }
 ```
 

@@ -7,9 +7,7 @@ Install [flyctl](https://github.com/superfly/flyctl) - Command line tools for [f
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/flyctl:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/flyctl:1": {}
 }
 ```
 

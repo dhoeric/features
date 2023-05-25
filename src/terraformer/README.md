@@ -7,9 +7,7 @@ Install [terraformer](https://github.com/GoogleCloudPlatform/terraformer)
 
 ```json
 "features": {
-    "ghcr.io/dhoeric/features/terraformer:1": {
-        "version": "latest"
-    }
+    "ghcr.io/dhoeric/features/terraformer:1": {}
 }
 ```
 
