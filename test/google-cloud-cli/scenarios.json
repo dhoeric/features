@@ -1,0 +1,26 @@
+{
+	"install_specific_version": {
+		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"features": {
+			"google-cloud-cli": {
+				"version": "430.0.0"
+			}
+		}
+	},
+	"install_gke_auth_plugin": {
+		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"features": {
+			"google-cloud-cli": {
+				"installGkeGcloudAuthPlugin": true
+			}
+		}
+	},
+	"install_pubsub_emulator": {
+		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"features": {
+			"google-cloud-cli": {
+				"installPubsubEmulator": true
+			}
+		}
+	}
+}
