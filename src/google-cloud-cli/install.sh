@@ -6,7 +6,32 @@ set -e
 rm -rf /var/lib/apt/lists/*
 
 GCLOUD_VERSION=${VERSION:-"latest"}
-INSTALL_GKEGCLOUDAUTH_PLUGIN="${INSTALL_GKEGCLOUDAUTH_PLUGIN:-"false"}"
+OPTIONAL_PACKAGES=(
+    "google-cloud-cli-anthos-auth"
+    "google-cloud-cli-app-engine-go"
+    "google-cloud-cli-app-engine-grpc"
+    "google-cloud-cli-app-engine-java"
+    "google-cloud-cli-app-engine-python"
+    "google-cloud-cli-app-engine-python-extras"
+    "google-cloud-cli-bigtable-emulator"
+    "google-cloud-cli-cbt"
+    "google-cloud-cli-cloud-build-local"
+    "google-cloud-cli-cloud-run-proxy"
+    "google-cloud-cli-config-connector"
+    "google-cloud-cli-datastore-emulator"
+    "google-cloud-cli-firestore-emulator"
+    "google-cloud-cli-gke-gcloud-auth-plugin"
+    "google-cloud-cli-kpt"
+    "google-cloud-cli-kubectl-oidc"
+    "google-cloud-cli-local-extract"
+    "google-cloud-cli-minikube"
+    "google-cloud-cli-nomos"
+    "google-cloud-cli-pubsub-emulator"
+    "google-cloud-cli-skaffold"
+    "google-cloud-cli-spanner-emulator"
+    "google-cloud-cli-terraform-validator"
+    "google-cloud-cli-tests"
+)
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -89,11 +114,16 @@ install_using_apt() {
         return 1
     fi
 
-    # Install gke-gcloud-auth-plugin if needed
-    if [ "${INSTALL_GKEGCLOUDAUTH_PLUGIN}" = "true" ]; then
-        echo "(*) Installing 'gke-gcloud-auth-plugin' plugin..."
-        check_packages google-cloud-sdk-gke-gcloud-auth-plugin
-    fi
+    for pkg in ${OPTIONAL_PACKAGES[@]}; do
+        pkg_install_env=$(echo $pkg | sed 's/google-cloud-cli-/install/' | sed 's/-//g' | tr '[:lower:]' '[:upper:]')
+        #echo "DEBUG ${pkg_install_env}=${!pkg_install_env}"
+        if ! [ -z "${!pkg_install_env}" ] && ${!pkg_install_env}; then
+            echo "(*) Installing '${pkg}'"
+            check_packages $pkg
+        else
+            echo "( ) Skipping '${pkg}'"
+        fi
+    done
 }
 
 echo "(*) Installing google-cloud CLI..."
