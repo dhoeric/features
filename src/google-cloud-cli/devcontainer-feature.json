@@ -1,7 +1,7 @@
 {
     "name": "Google Cloud CLI",
     "id": "google-cloud-cli",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Install google-cloud-cli",
     "documentationURL": "https://github.com/dhoeric/features/tree/main/src/google-cloud-cli",
     "options": {
@@ -10,10 +10,125 @@
             "default": "latest",
             "description": "Select or enter a gcloud CLI version"
         },
-        "installGkeGcloudAuthPlugin": {
+        "installanthosauth": {
             "type": "boolean",
             "default": false,
-            "description": "Install 'gke-gcloud-auth-plugin' plugin?"
+            "description": "Also install 'google-cloud-cli-anthos-auth'"
+        },
+        "installappenginego": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-app-engine-go'"
+        },
+        "installappenginegrpc": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-app-engine-grpc'"
+        },
+        "installappenginejava": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-app-engine-java'"
+        },
+        "installappenginepython": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-app-engine-python'"
+        },
+        "installappenginepythonextras": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-app-engine-python-extras'"
+        },
+        "installbigtableemulator": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-bigtable-emulator'"
+        },
+        "installcbt": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-cbt'"
+        },
+        "installcloudbuildlocal": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-cloud-build-local'"
+        },
+        "installcloudrunproxy": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-cloud-run-proxy'"
+        },
+        "installconfigconnector": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-config-connector'"
+        },
+        "installdatastoreemulator": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-datastore-emulator'"
+        },
+        "installfirestoreemulator": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-firestore-emulator'"
+        },
+        "installgkegcloudauthplugin": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-gke-gcloud-auth-plugin'"
+        },
+        "installkpt": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-kpt'"
+        },
+        "installkubectloidc": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-kubectl-oidc'"
+        },
+        "installlocalextract": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-local-extract'"
+        },
+        "installminikube": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-minikube'"
+        },
+        "installnomos": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-nomos'"
+        },
+        "installpubsubemulator": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-pubsub-emulator'"
+        },
+        "installskaffold": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-skaffold'"
+        },
+        "installspanneremulator": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-spanner-emulator'"
+        },
+        "installterraformvalidator": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-terraform-validator'"
+        },
+        "installtests": {
+            "type": "boolean",
+            "default": false,
+            "description": "Also install 'google-cloud-cli-tests'"
         }
     },
     "installsAfter": [
